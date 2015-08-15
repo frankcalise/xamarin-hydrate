@@ -67,6 +67,7 @@
     <AndroidResource Include="Resources\values\Colors.xml" />
     <AndroidResource Include="Resources\layout\ListHeaderItem.axml" />
     <AndroidResource Include="Resources\layout\ListChildItem.axml" />
+    <AndroidResource Include="Resources\layout\ListStickyHeader.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
 </Project>

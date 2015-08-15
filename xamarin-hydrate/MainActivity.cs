@@ -19,10 +19,37 @@ namespace xamarinhydrate
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
+            // Inflate the list sticky header layout
+            var inflater = (LayoutInflater)this.GetSystemService(Context.LayoutInflaterService);
+            var stickyHeaderView = inflater.Inflate(Resource.Layout.ListStickyHeader, null);
+            var spacer = stickyHeaderView.FindViewById<Space>(Resource.Id.stickyViewPlaceholder);
+
             // Get the expandable list view from the layout resource
-            // and attach the adapter to it
             var expListView = FindViewById<ExpandableListView>(Resource.Id.historyExpListView);
+
+            // Add the header to the list view
+            expListView.AddHeaderView(stickyHeaderView);
+
+            // Handle list view scroll events
+            expListView.Scroll += (sender, e) =>
+            {
+                    if (expListView.FirstVisiblePosition == 0)
+                    {
+                        var firstChild = expListView.GetChildAt(0);
+                        var topY = 0;
+                        if (firstChild != null)  
+                        {
+                            topY = firstChild.Top;
+                        }
+
+                        var spacerTopY = stickyHeaderView.Top;
+                        stickyHeaderView.SetY(Math.Max(0, spacerTopY + topY));
+                    }
+            };
+
+            // Populate the list with sample data
             expListView.SetAdapter(new ExpandableDataAdapter(this, Data.SampleData()));
+
         }
     }
 }

@@ -91,11 +91,17 @@ namespace xamarinhydrate
 			// aapt resource value: 0x7f060003
 			public const int ListHeaderItem = 2131099651;
 			
+			// aapt resource value: 0x7f060008
+			public const int historyExpListView = 2131099656;
+			
 			// aapt resource value: 0x7f060006
-			public const int historyExpListView = 2131099654;
+			public const int progressText = 2131099654;
+			
+			// aapt resource value: 0x7f060007
+			public const int stickyView = 2131099655;
 			
 			// aapt resource value: 0x7f060005
-			public const int progressText = 2131099653;
+			public const int stickyViewPlaceholder = 2131099653;
 			
 			static Id()
 			{
@@ -117,7 +123,10 @@ namespace xamarinhydrate
 			public const int ListHeaderItem = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int Main = 2130903042;
+			public const int ListStickyHeader = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int Main = 2130903043;
 			
 			static Layout()
 			{
