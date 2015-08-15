@@ -19,8 +19,11 @@ namespace xamarinhydrate
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
+			var progressText = FindViewById<TextView>(Resource.Id.progressText);
+
             // Inflate the list sticky header layout
             var inflater = (LayoutInflater)this.GetSystemService(Context.LayoutInflaterService);
+			var stickyView = FindViewById<TextView>(Resource.Id.stickyView);
             var stickyHeaderView = inflater.Inflate(Resource.Layout.ListStickyHeader, null);
             var spacer = stickyHeaderView.FindViewById<Space>(Resource.Id.stickyViewPlaceholder);
 
@@ -42,8 +45,11 @@ namespace xamarinhydrate
                             topY = firstChild.Top;
                         }
 
-                        var spacerTopY = stickyHeaderView.Top;
-                        stickyHeaderView.SetY(Math.Max(0, spacerTopY + topY));
+                        var spacerTopY = spacer.Top;
+						stickyView.SetY(Math.Max(0, spacerTopY + topY));
+
+						// Set the progress text to scroll half the amount of the listview
+						progressText.SetY(topY * 0.5f);
                     }
             };
 
