@@ -6,11 +6,17 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Android.Support.V7.App;
+using Android.Support.Design.Widget;
 
 namespace xamarinhydrate
 {
-    [Activity(Label = "xamarin-hydrate", MainLauncher = true, Icon = "@drawable/icon")]
-    public class MainActivity : Activity
+    [Activity(
+        Label = "xamarin-hydrate",
+        MainLauncher = true,
+        Icon = "@drawable/icon",
+        Theme = "@style/Theme.AppCompat.Light.DarkActionBar")]
+    public class MainActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
@@ -20,6 +26,11 @@ namespace xamarinhydrate
             SetContentView(Resource.Layout.Main);
 
 			var progressText = FindViewById<TextView>(Resource.Id.progressText);
+
+            // Floating Action Button
+            var actionButton = FindViewById<FloatingActionButton>(Resource.Id.ActionButton);
+            actionButton.Click += (sender, e) => 
+				Toast.MakeText(this, "Action tapped!", ToastLength.Short).Show();
 
             // Inflate the list sticky header layout
             var inflater = (LayoutInflater)this.GetSystemService(Context.LayoutInflaterService);
