@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 using Android.App;
 using Android.Content;
@@ -8,6 +9,8 @@ using Android.Widget;
 using Android.OS;
 using Android.Support.V7.App;
 using Android.Support.Design.Widget;
+
+using com.frankcalise.widgets;
 
 namespace xamarinhydrate
 {
@@ -25,7 +28,17 @@ namespace xamarinhydrate
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-			var progressText = FindViewById<TextView>(Resource.Id.progressText);
+			var fitChart = FindViewById<FitChart> (Resource.Id.FitChart);
+			fitChart.MinValue = 0f;
+			fitChart.MaxValue = 100f;
+
+			var values = new List<FitChartValue>();
+			values.Add(new FitChartValue(30f, Resources.GetColor(Resource.Color.chart_value_1)));
+			values.Add(new FitChartValue(20f, Resources.GetColor(Resource.Color.chart_value_2)));
+			values.Add(new FitChartValue(15f, Resources.GetColor(Resource.Color.chart_value_3)));
+			values.Add(new FitChartValue(10f, Resources.GetColor(Resource.Color.chart_value_4)));
+			fitChart.SetValues (values);
+			//var progressText = FindViewById<TextView>(Resource.Id.progressText);
 
             // Floating Action Button
             var actionButton = FindViewById<FloatingActionButton>(Resource.Id.ActionButton);
@@ -59,14 +72,14 @@ namespace xamarinhydrate
                         var spacerTopY = spacer.Top;
 						stickyView.SetY(Math.Max(0, spacerTopY + topY));
 
-						// Set the progress text to scroll half the amount of the listview
-						progressText.SetY(topY * 0.5f);
+						//// Set the progress text to scroll half the amount of the listview
+						// Set the FitChart to scroll half the amount of the listview
+						fitChart.SetY(topY * 0.5f);
                     }
             };
 
             // Populate the list with sample data
             expListView.SetAdapter(new ExpandableDataAdapter(this, Data.SampleData()));
-
         }
     }
 }

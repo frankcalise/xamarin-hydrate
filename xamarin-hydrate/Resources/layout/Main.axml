@@ -9,18 +9,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <TextView
-            android:id="@+id/progressText"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="@string/hello"
-            android:gravity="center_horizontal"
-            android:background="@android:color/holo_red_light" />
+        <com.frankcalise.widgets.FitChart
+            android:id="@+id/FitChart"
+            style="@style/chart_style"
+            android:layout_gravity="center"
+            app:animationMode="overdraw"
+            app:valueStrokeColor="#ff3d00"
+            app:backStrokeColor="#f0f0f0" />
         <ExpandableListView
             android:id="@+id/historyExpListView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:scrollbars="none" />
+            android:scrollbars="none"
+            android:divider="@color/cell_divider" />
         <TextView
             android:id="@+id/stickyView"
             android:layout_width="match_parent"

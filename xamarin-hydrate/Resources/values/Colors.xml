@@ -1,5 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <resources>
 	<color name="gray">#999999</color>
-</resources>
 
+	<color name="chart_value_1">#2d4302</color>
+    <color name="chart_value_2">#75a80d</color>
+    <color name="chart_value_3">#8fc026</color>
+    <color name="chart_value_4">#B5CC84</color>
+
+    <color name="goals_met">#757575</color>
+    <color name="history_amount">#686868</color>
+    <color name="cell_divider">#e4e4e4</color>
+</resources>

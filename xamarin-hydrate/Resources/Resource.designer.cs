@@ -26,6 +26,22 @@ namespace xamarinhydrate
 		
 		public static void UpdateIdValues()
 		{
+			global::com.frankcalise.widgets.Resource.Attribute.animationMode = global::xamarinhydrate.Resource.Attribute.animationMode;
+			global::com.frankcalise.widgets.Resource.Attribute.backStrokeColor = global::xamarinhydrate.Resource.Attribute.backStrokeColor;
+			global::com.frankcalise.widgets.Resource.Attribute.strokeSize = global::xamarinhydrate.Resource.Attribute.strokeSize;
+			global::com.frankcalise.widgets.Resource.Attribute.valueStrokeColor = global::xamarinhydrate.Resource.Attribute.valueStrokeColor;
+			global::com.frankcalise.widgets.Resource.Color.default_back_color = global::xamarinhydrate.Resource.Color.default_back_color;
+			global::com.frankcalise.widgets.Resource.Color.default_back_stroke_color = global::xamarinhydrate.Resource.Color.default_back_stroke_color;
+			global::com.frankcalise.widgets.Resource.Color.default_chart_value_color = global::xamarinhydrate.Resource.Color.default_chart_value_color;
+			global::com.frankcalise.widgets.Resource.Dimension.default_stroke_size = global::xamarinhydrate.Resource.Dimension.default_stroke_size;
+			global::com.frankcalise.widgets.Resource.Id.linear = global::xamarinhydrate.Resource.Id.linear;
+			global::com.frankcalise.widgets.Resource.Id.overdraw = global::xamarinhydrate.Resource.Id.overdraw;
+			global::com.frankcalise.widgets.Resource.String.library_name = global::xamarinhydrate.Resource.String.library_name;
+			global::com.frankcalise.widgets.Resource.Styleable.FitChart = global::xamarinhydrate.Resource.Styleable.FitChart;
+			global::com.frankcalise.widgets.Resource.Styleable.FitChart_animationMode = global::xamarinhydrate.Resource.Styleable.FitChart_animationMode;
+			global::com.frankcalise.widgets.Resource.Styleable.FitChart_backStrokeColor = global::xamarinhydrate.Resource.Styleable.FitChart_backStrokeColor;
+			global::com.frankcalise.widgets.Resource.Styleable.FitChart_strokeSize = global::xamarinhydrate.Resource.Styleable.FitChart_strokeSize;
+			global::com.frankcalise.widgets.Resource.Styleable.FitChart_valueStrokeColor = global::xamarinhydrate.Resource.Styleable.FitChart_valueStrokeColor;
 		}
 		
 		public partial class Animation
@@ -200,8 +216,14 @@ namespace xamarinhydrate
 			// aapt resource value: 0x7f0100a9
 			public const int alertDialogTheme = 2130772137;
 			
+			// aapt resource value: 0x7f0100ff
+			public const int animationMode = 2130772223;
+			
 			// aapt resource value: 0x7f0100ae
 			public const int autoCompleteTextViewStyle = 2130772142;
+			
+			// aapt resource value: 0x7f0100fe
+			public const int backStrokeColor = 2130772222;
 			
 			// aapt resource value: 0x7f01000c
 			public const int background = 2130771980;
@@ -659,6 +681,9 @@ namespace xamarinhydrate
 			// aapt resource value: 0x7f0100d5
 			public const int statusBarScrim = 2130772181;
 			
+			// aapt resource value: 0x7f0100fc
+			public const int strokeSize = 2130772220;
+			
 			// aapt resource value: 0x7f010043
 			public const int submitBackground = 2130772035;
 			
@@ -809,6 +834,9 @@ namespace xamarinhydrate
 			// aapt resource value: 0x7f010048
 			public const int track = 2130772040;
 			
+			// aapt resource value: 0x7f0100fd
+			public const int valueStrokeColor = 2130772221;
+			
 			// aapt resource value: 0x7f01003f
 			public const int voiceIcon = 2130772031;
 			
@@ -889,29 +917,29 @@ namespace xamarinhydrate
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0a003d
-			public const int abc_background_cache_hint_selector_material_dark = 2131361853;
+			// aapt resource value: 0x7f0a0047
+			public const int abc_background_cache_hint_selector_material_dark = 2131361863;
 			
-			// aapt resource value: 0x7f0a003e
-			public const int abc_background_cache_hint_selector_material_light = 2131361854;
+			// aapt resource value: 0x7f0a0048
+			public const int abc_background_cache_hint_selector_material_light = 2131361864;
 			
 			// aapt resource value: 0x7f0a0000
 			public const int abc_input_method_navigation_guard = 2131361792;
 			
-			// aapt resource value: 0x7f0a003f
-			public const int abc_primary_text_disable_only_material_dark = 2131361855;
+			// aapt resource value: 0x7f0a0049
+			public const int abc_primary_text_disable_only_material_dark = 2131361865;
 			
-			// aapt resource value: 0x7f0a0040
-			public const int abc_primary_text_disable_only_material_light = 2131361856;
+			// aapt resource value: 0x7f0a004a
+			public const int abc_primary_text_disable_only_material_light = 2131361866;
 			
-			// aapt resource value: 0x7f0a0041
-			public const int abc_primary_text_material_dark = 2131361857;
+			// aapt resource value: 0x7f0a004b
+			public const int abc_primary_text_material_dark = 2131361867;
 			
-			// aapt resource value: 0x7f0a0042
-			public const int abc_primary_text_material_light = 2131361858;
+			// aapt resource value: 0x7f0a004c
+			public const int abc_primary_text_material_light = 2131361868;
 			
-			// aapt resource value: 0x7f0a0043
-			public const int abc_search_url_text = 2131361859;
+			// aapt resource value: 0x7f0a004d
+			public const int abc_search_url_text = 2131361869;
 			
 			// aapt resource value: 0x7f0a0001
 			public const int abc_search_url_text_normal = 2131361793;
@@ -922,11 +950,11 @@ namespace xamarinhydrate
 			// aapt resource value: 0x7f0a0003
 			public const int abc_search_url_text_selected = 2131361795;
 			
-			// aapt resource value: 0x7f0a0044
-			public const int abc_secondary_text_material_dark = 2131361860;
+			// aapt resource value: 0x7f0a004e
+			public const int abc_secondary_text_material_dark = 2131361870;
 			
-			// aapt resource value: 0x7f0a0045
-			public const int abc_secondary_text_material_light = 2131361861;
+			// aapt resource value: 0x7f0a004f
+			public const int abc_secondary_text_material_light = 2131361871;
 			
 			// aapt resource value: 0x7f0a0004
 			public const int accent_material_dark = 2131361796;
@@ -970,6 +998,30 @@ namespace xamarinhydrate
 			// aapt resource value: 0x7f0a0011
 			public const int button_material_light = 2131361809;
 			
+			// aapt resource value: 0x7f0a0046
+			public const int cell_divider = 2131361862;
+			
+			// aapt resource value: 0x7f0a0040
+			public const int chart_value_1 = 2131361856;
+			
+			// aapt resource value: 0x7f0a0041
+			public const int chart_value_2 = 2131361857;
+			
+			// aapt resource value: 0x7f0a0042
+			public const int chart_value_3 = 2131361858;
+			
+			// aapt resource value: 0x7f0a0043
+			public const int chart_value_4 = 2131361859;
+			
+			// aapt resource value: 0x7f0a003c
+			public const int default_back_color = 2131361852;
+			
+			// aapt resource value: 0x7f0a003d
+			public const int default_back_stroke_color = 2131361853;
+			
+			// aapt resource value: 0x7f0a003e
+			public const int default_chart_value_color = 2131361854;
+			
 			// aapt resource value: 0x7f0a0012
 			public const int dim_foreground_disabled_material_dark = 2131361810;
 			
@@ -997,8 +1049,11 @@ namespace xamarinhydrate
 			// aapt resource value: 0x7f0a0037
 			public const int fab_stroke_top_outer_color = 2131361847;
 			
-			// aapt resource value: 0x7f0a003c
-			public const int gray = 2131361852;
+			// aapt resource value: 0x7f0a0044
+			public const int goals_met = 2131361860;
+			
+			// aapt resource value: 0x7f0a003f
+			public const int gray = 2131361855;
 			
 			// aapt resource value: 0x7f0a0016
 			public const int highlighted_text_material_dark = 2131361814;
@@ -1011,6 +1066,9 @@ namespace xamarinhydrate
 			
 			// aapt resource value: 0x7f0a0019
 			public const int hint_foreground_material_light = 2131361817;
+			
+			// aapt resource value: 0x7f0a0045
+			public const int history_amount = 2131361861;
 			
 			// aapt resource value: 0x7f0a001a
 			public const int link_text_material_dark = 2131361818;
@@ -1093,11 +1151,11 @@ namespace xamarinhydrate
 			// aapt resource value: 0x7f0a0030
 			public const int switch_thumb_disabled_material_light = 2131361840;
 			
-			// aapt resource value: 0x7f0a0046
-			public const int switch_thumb_material_dark = 2131361862;
+			// aapt resource value: 0x7f0a0050
+			public const int switch_thumb_material_dark = 2131361872;
 			
-			// aapt resource value: 0x7f0a0047
-			public const int switch_thumb_material_light = 2131361863;
+			// aapt resource value: 0x7f0a0051
+			public const int switch_thumb_material_light = 2131361873;
 			
 			// aapt resource value: 0x7f0a0031
 			public const int switch_thumb_normal_material_dark = 2131361841;
@@ -1301,6 +1359,12 @@ namespace xamarinhydrate
 			// aapt resource value: 0x7f06004d
 			public const int appbar_elevation = 2131099725;
 			
+			// aapt resource value: 0x7f060060
+			public const int chart_size = 2131099744;
+			
+			// aapt resource value: 0x7f06005f
+			public const int default_stroke_size = 2131099743;
+			
 			// aapt resource value: 0x7f060008
 			public const int dialog_fixed_height_major = 2131099656;
 			
@@ -1396,6 +1460,9 @@ namespace xamarinhydrate
 			
 			// aapt resource value: 0x7f06005d
 			public const int snackbar_text_size = 2131099741;
+			
+			// aapt resource value: 0x7f060061
+			public const int stroke_size = 2131099745;
 			
 			// aapt resource value: 0x7f06005e
 			public const int tab_max_width = 2131099742;
@@ -1621,53 +1688,56 @@ namespace xamarinhydrate
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0b0072
-			public const int ActionButton = 2131427442;
-			
-			// aapt resource value: 0x7f0b0069
-			public const int DataAmount = 2131427433;
-			
-			// aapt resource value: 0x7f0b006a
-			public const int DataTime = 2131427434;
-			
-			// aapt resource value: 0x7f0b006c
-			public const int ItemHeader = 2131427436;
-			
-			// aapt resource value: 0x7f0b0068
-			public const int ListChildItem = 2131427432;
+			// aapt resource value: 0x7f0b0074
+			public const int ActionButton = 2131427444;
 			
 			// aapt resource value: 0x7f0b006b
-			public const int ListHeaderItem = 2131427435;
+			public const int DataAmount = 2131427435;
 			
-			// aapt resource value: 0x7f0b0073
-			public const int action0 = 2131427443;
+			// aapt resource value: 0x7f0b006c
+			public const int DataTime = 2131427436;
 			
-			// aapt resource value: 0x7f0b0057
-			public const int action_bar = 2131427415;
+			// aapt resource value: 0x7f0b0071
+			public const int FitChart = 2131427441;
+			
+			// aapt resource value: 0x7f0b006e
+			public const int ItemHeader = 2131427438;
+			
+			// aapt resource value: 0x7f0b006a
+			public const int ListChildItem = 2131427434;
+			
+			// aapt resource value: 0x7f0b006d
+			public const int ListHeaderItem = 2131427437;
+			
+			// aapt resource value: 0x7f0b0075
+			public const int action0 = 2131427445;
+			
+			// aapt resource value: 0x7f0b0059
+			public const int action_bar = 2131427417;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int action_bar_activity_content = 2131427328;
 			
-			// aapt resource value: 0x7f0b0056
-			public const int action_bar_container = 2131427414;
+			// aapt resource value: 0x7f0b0058
+			public const int action_bar_container = 2131427416;
 			
-			// aapt resource value: 0x7f0b0052
-			public const int action_bar_root = 2131427410;
+			// aapt resource value: 0x7f0b0054
+			public const int action_bar_root = 2131427412;
 			
 			// aapt resource value: 0x7f0b0001
 			public const int action_bar_spinner = 2131427329;
 			
-			// aapt resource value: 0x7f0b003b
-			public const int action_bar_subtitle = 2131427387;
+			// aapt resource value: 0x7f0b003d
+			public const int action_bar_subtitle = 2131427389;
 			
-			// aapt resource value: 0x7f0b003a
-			public const int action_bar_title = 2131427386;
+			// aapt resource value: 0x7f0b003c
+			public const int action_bar_title = 2131427388;
 			
-			// aapt resource value: 0x7f0b0058
-			public const int action_context_bar = 2131427416;
+			// aapt resource value: 0x7f0b005a
+			public const int action_context_bar = 2131427418;
 			
-			// aapt resource value: 0x7f0b0077
-			public const int action_divider = 2131427447;
+			// aapt resource value: 0x7f0b0079
+			public const int action_divider = 2131427449;
 			
 			// aapt resource value: 0x7f0b0002
 			public const int action_menu_divider = 2131427330;
@@ -1675,20 +1745,20 @@ namespace xamarinhydrate
 			// aapt resource value: 0x7f0b0003
 			public const int action_menu_presenter = 2131427331;
 			
-			// aapt resource value: 0x7f0b0054
-			public const int action_mode_bar = 2131427412;
+			// aapt resource value: 0x7f0b0056
+			public const int action_mode_bar = 2131427414;
 			
-			// aapt resource value: 0x7f0b0053
-			public const int action_mode_bar_stub = 2131427411;
+			// aapt resource value: 0x7f0b0055
+			public const int action_mode_bar_stub = 2131427413;
 			
-			// aapt resource value: 0x7f0b003c
-			public const int action_mode_close_button = 2131427388;
+			// aapt resource value: 0x7f0b003e
+			public const int action_mode_close_button = 2131427390;
 			
-			// aapt resource value: 0x7f0b003d
-			public const int activity_chooser_view_content = 2131427389;
+			// aapt resource value: 0x7f0b003f
+			public const int activity_chooser_view_content = 2131427391;
 			
-			// aapt resource value: 0x7f0b0047
-			public const int alertTitle = 2131427399;
+			// aapt resource value: 0x7f0b0049
+			public const int alertTitle = 2131427401;
 			
 			// aapt resource value: 0x7f0b0017
 			public const int always = 2131427351;
@@ -1699,11 +1769,11 @@ namespace xamarinhydrate
 			// aapt resource value: 0x7f0b002a
 			public const int bottom = 2131427370;
 			
-			// aapt resource value: 0x7f0b004d
-			public const int buttonPanel = 2131427405;
+			// aapt resource value: 0x7f0b004f
+			public const int buttonPanel = 2131427407;
 			
-			// aapt resource value: 0x7f0b0074
-			public const int cancel_action = 2131427444;
+			// aapt resource value: 0x7f0b0076
+			public const int cancel_action = 2131427446;
 			
 			// aapt resource value: 0x7f0b002b
 			public const int center = 2131427371;
@@ -1714,11 +1784,11 @@ namespace xamarinhydrate
 			// aapt resource value: 0x7f0b002d
 			public const int center_vertical = 2131427373;
 			
-			// aapt resource value: 0x7f0b004f
-			public const int checkbox = 2131427407;
+			// aapt resource value: 0x7f0b0051
+			public const int checkbox = 2131427409;
 			
-			// aapt resource value: 0x7f0b007a
-			public const int chronometer = 2131427450;
+			// aapt resource value: 0x7f0b007c
+			public const int chronometer = 2131427452;
 			
 			// aapt resource value: 0x7f0b002e
 			public const int clip_horizontal = 2131427374;
@@ -1729,20 +1799,20 @@ namespace xamarinhydrate
 			// aapt resource value: 0x7f0b0018
 			public const int collapseActionView = 2131427352;
 			
-			// aapt resource value: 0x7f0b0048
-			public const int contentPanel = 2131427400;
+			// aapt resource value: 0x7f0b004a
+			public const int contentPanel = 2131427402;
 			
-			// aapt resource value: 0x7f0b004c
-			public const int custom = 2131427404;
+			// aapt resource value: 0x7f0b004e
+			public const int custom = 2131427406;
 			
-			// aapt resource value: 0x7f0b004b
-			public const int customPanel = 2131427403;
+			// aapt resource value: 0x7f0b004d
+			public const int customPanel = 2131427405;
 			
-			// aapt resource value: 0x7f0b0055
-			public const int decor_content_parent = 2131427413;
+			// aapt resource value: 0x7f0b0057
+			public const int decor_content_parent = 2131427415;
 			
-			// aapt resource value: 0x7f0b0040
-			public const int default_activity_button = 2131427392;
+			// aapt resource value: 0x7f0b0042
+			public const int default_activity_button = 2131427394;
 			
 			// aapt resource value: 0x7f0b001c
 			public const int dialog = 2131427356;
@@ -1750,20 +1820,20 @@ namespace xamarinhydrate
 			// aapt resource value: 0x7f0b000d
 			public const int disableHome = 2131427341;
 			
-			// aapt resource value: 0x7f0b006e
-			public const int drawer = 2131427438;
+			// aapt resource value: 0x7f0b0070
+			public const int drawer = 2131427440;
 			
 			// aapt resource value: 0x7f0b001d
 			public const int dropdown = 2131427357;
 			
-			// aapt resource value: 0x7f0b0059
-			public const int edit_query = 2131427417;
+			// aapt resource value: 0x7f0b005b
+			public const int edit_query = 2131427419;
 			
 			// aapt resource value: 0x7f0b0015
 			public const int end = 2131427349;
 			
-			// aapt resource value: 0x7f0b007f
-			public const int end_padder = 2131427455;
+			// aapt resource value: 0x7f0b0081
+			public const int end_padder = 2131427457;
 			
 			// aapt resource value: 0x7f0b0024
 			public const int enterAlways = 2131427364;
@@ -1774,11 +1844,11 @@ namespace xamarinhydrate
 			// aapt resource value: 0x7f0b0026
 			public const int exitUntilCollapsed = 2131427366;
 			
-			// aapt resource value: 0x7f0b003e
-			public const int expand_activities_button = 2131427390;
+			// aapt resource value: 0x7f0b0040
+			public const int expand_activities_button = 2131427392;
 			
-			// aapt resource value: 0x7f0b004e
-			public const int expanded_menu = 2131427406;
+			// aapt resource value: 0x7f0b0050
+			public const int expanded_menu = 2131427408;
 			
 			// aapt resource value: 0x7f0b0030
 			public const int fill = 2131427376;
@@ -1792,8 +1862,8 @@ namespace xamarinhydrate
 			// aapt resource value: 0x7f0b0038
 			public const int @fixed = 2131427384;
 			
-			// aapt resource value: 0x7f0b0070
-			public const int historyExpListView = 2131427440;
+			// aapt resource value: 0x7f0b0072
+			public const int historyExpListView = 2131427442;
 			
 			// aapt resource value: 0x7f0b0004
 			public const int home = 2131427332;
@@ -1801,35 +1871,38 @@ namespace xamarinhydrate
 			// aapt resource value: 0x7f0b000e
 			public const int homeAsUp = 2131427342;
 			
-			// aapt resource value: 0x7f0b0042
-			public const int icon = 2131427394;
+			// aapt resource value: 0x7f0b0044
+			public const int icon = 2131427396;
 			
 			// aapt resource value: 0x7f0b0019
 			public const int ifRoom = 2131427353;
 			
-			// aapt resource value: 0x7f0b003f
-			public const int image = 2131427391;
+			// aapt resource value: 0x7f0b0041
+			public const int image = 2131427393;
 			
-			// aapt resource value: 0x7f0b007e
-			public const int info = 2131427454;
+			// aapt resource value: 0x7f0b0080
+			public const int info = 2131427456;
 			
 			// aapt resource value: 0x7f0b0033
 			public const int left = 2131427379;
 			
-			// aapt resource value: 0x7f0b0078
-			public const int line1 = 2131427448;
+			// aapt resource value: 0x7f0b007a
+			public const int line1 = 2131427450;
 			
-			// aapt resource value: 0x7f0b007c
-			public const int line3 = 2131427452;
+			// aapt resource value: 0x7f0b007e
+			public const int line3 = 2131427454;
+			
+			// aapt resource value: 0x7f0b003a
+			public const int linear = 2131427386;
 			
 			// aapt resource value: 0x7f0b000a
 			public const int listMode = 2131427338;
 			
-			// aapt resource value: 0x7f0b0041
-			public const int list_item = 2131427393;
+			// aapt resource value: 0x7f0b0043
+			public const int list_item = 2131427395;
 			
-			// aapt resource value: 0x7f0b0076
-			public const int media_actions = 2131427446;
+			// aapt resource value: 0x7f0b0078
+			public const int media_actions = 2131427448;
 			
 			// aapt resource value: 0x7f0b0016
 			public const int middle = 2131427350;
@@ -1849,17 +1922,17 @@ namespace xamarinhydrate
 			// aapt resource value: 0x7f0b000b
 			public const int normal = 2131427339;
 			
+			// aapt resource value: 0x7f0b003b
+			public const int overdraw = 2131427387;
+			
 			// aapt resource value: 0x7f0b0028
 			public const int parallax = 2131427368;
 			
-			// aapt resource value: 0x7f0b0044
-			public const int parentPanel = 2131427396;
+			// aapt resource value: 0x7f0b0046
+			public const int parentPanel = 2131427398;
 			
 			// aapt resource value: 0x7f0b0029
 			public const int pin = 2131427369;
-			
-			// aapt resource value: 0x7f0b006f
-			public const int progressText = 2131427439;
 			
 			// aapt resource value: 0x7f0b0005
 			public const int progress_circular = 2131427333;
@@ -1867,8 +1940,8 @@ namespace xamarinhydrate
 			// aapt resource value: 0x7f0b0006
 			public const int progress_horizontal = 2131427334;
 			
-			// aapt resource value: 0x7f0b0051
-			public const int radio = 2131427409;
+			// aapt resource value: 0x7f0b0053
+			public const int radio = 2131427411;
 			
 			// aapt resource value: 0x7f0b0034
 			public const int right = 2131427380;
@@ -1879,47 +1952,47 @@ namespace xamarinhydrate
 			// aapt resource value: 0x7f0b0027
 			public const int scroll = 2131427367;
 			
-			// aapt resource value: 0x7f0b0049
-			public const int scrollView = 2131427401;
+			// aapt resource value: 0x7f0b004b
+			public const int scrollView = 2131427403;
 			
 			// aapt resource value: 0x7f0b0039
 			public const int scrollable = 2131427385;
 			
-			// aapt resource value: 0x7f0b005b
-			public const int search_badge = 2131427419;
-			
-			// aapt resource value: 0x7f0b005a
-			public const int search_bar = 2131427418;
+			// aapt resource value: 0x7f0b005d
+			public const int search_badge = 2131427421;
 			
 			// aapt resource value: 0x7f0b005c
-			public const int search_button = 2131427420;
-			
-			// aapt resource value: 0x7f0b0061
-			public const int search_close_btn = 2131427425;
-			
-			// aapt resource value: 0x7f0b005d
-			public const int search_edit_frame = 2131427421;
-			
-			// aapt resource value: 0x7f0b0063
-			public const int search_go_btn = 2131427427;
+			public const int search_bar = 2131427420;
 			
 			// aapt resource value: 0x7f0b005e
-			public const int search_mag_icon = 2131427422;
+			public const int search_button = 2131427422;
+			
+			// aapt resource value: 0x7f0b0063
+			public const int search_close_btn = 2131427427;
 			
 			// aapt resource value: 0x7f0b005f
-			public const int search_plate = 2131427423;
-			
-			// aapt resource value: 0x7f0b0060
-			public const int search_src_text = 2131427424;
-			
-			// aapt resource value: 0x7f0b0064
-			public const int search_voice_btn = 2131427428;
+			public const int search_edit_frame = 2131427423;
 			
 			// aapt resource value: 0x7f0b0065
-			public const int select_dialog_listview = 2131427429;
+			public const int search_go_btn = 2131427429;
 			
-			// aapt resource value: 0x7f0b0050
-			public const int shortcut = 2131427408;
+			// aapt resource value: 0x7f0b0060
+			public const int search_mag_icon = 2131427424;
+			
+			// aapt resource value: 0x7f0b0061
+			public const int search_plate = 2131427425;
+			
+			// aapt resource value: 0x7f0b0062
+			public const int search_src_text = 2131427426;
+			
+			// aapt resource value: 0x7f0b0066
+			public const int search_voice_btn = 2131427430;
+			
+			// aapt resource value: 0x7f0b0067
+			public const int select_dialog_listview = 2131427431;
+			
+			// aapt resource value: 0x7f0b0052
+			public const int shortcut = 2131427410;
 			
 			// aapt resource value: 0x7f0b0010
 			public const int showCustom = 2131427344;
@@ -1930,11 +2003,11 @@ namespace xamarinhydrate
 			// aapt resource value: 0x7f0b0012
 			public const int showTitle = 2131427346;
 			
-			// aapt resource value: 0x7f0b0067
-			public const int snackbar_action = 2131427431;
+			// aapt resource value: 0x7f0b0069
+			public const int snackbar_action = 2131427433;
 			
-			// aapt resource value: 0x7f0b0066
-			public const int snackbar_text = 2131427430;
+			// aapt resource value: 0x7f0b0068
+			public const int snackbar_text = 2131427432;
 			
 			// aapt resource value: 0x7f0b0007
 			public const int split_action_bar = 2131427335;
@@ -1951,44 +2024,44 @@ namespace xamarinhydrate
 			// aapt resource value: 0x7f0b0035
 			public const int start = 2131427381;
 			
-			// aapt resource value: 0x7f0b0075
-			public const int status_bar_latest_event_content = 2131427445;
+			// aapt resource value: 0x7f0b0077
+			public const int status_bar_latest_event_content = 2131427447;
 			
-			// aapt resource value: 0x7f0b0071
-			public const int stickyView = 2131427441;
+			// aapt resource value: 0x7f0b0073
+			public const int stickyView = 2131427443;
 			
-			// aapt resource value: 0x7f0b006d
-			public const int stickyViewPlaceholder = 2131427437;
+			// aapt resource value: 0x7f0b006f
+			public const int stickyViewPlaceholder = 2131427439;
 			
-			// aapt resource value: 0x7f0b0062
-			public const int submit_area = 2131427426;
+			// aapt resource value: 0x7f0b0064
+			public const int submit_area = 2131427428;
 			
 			// aapt resource value: 0x7f0b000c
 			public const int tabMode = 2131427340;
 			
+			// aapt resource value: 0x7f0b007f
+			public const int text = 2131427455;
+			
 			// aapt resource value: 0x7f0b007d
-			public const int text = 2131427453;
+			public const int text2 = 2131427453;
+			
+			// aapt resource value: 0x7f0b004c
+			public const int textSpacerNoButtons = 2131427404;
 			
 			// aapt resource value: 0x7f0b007b
-			public const int text2 = 2131427451;
+			public const int time = 2131427451;
 			
-			// aapt resource value: 0x7f0b004a
-			public const int textSpacerNoButtons = 2131427402;
+			// aapt resource value: 0x7f0b0045
+			public const int title = 2131427397;
 			
-			// aapt resource value: 0x7f0b0079
-			public const int time = 2131427449;
-			
-			// aapt resource value: 0x7f0b0043
-			public const int title = 2131427395;
-			
-			// aapt resource value: 0x7f0b0046
-			public const int title_template = 2131427398;
+			// aapt resource value: 0x7f0b0048
+			public const int title_template = 2131427400;
 			
 			// aapt resource value: 0x7f0b0036
 			public const int top = 2131427382;
 			
-			// aapt resource value: 0x7f0b0045
-			public const int topPanel = 2131427397;
+			// aapt resource value: 0x7f0b0047
+			public const int topPanel = 2131427399;
 			
 			// aapt resource value: 0x7f0b0008
 			public const int up = 2131427336;
@@ -2263,14 +2336,17 @@ namespace xamarinhydrate
 			// aapt resource value: 0x7f050010
 			public const int abc_toolbar_collapse_description = 2131034128;
 			
-			// aapt resource value: 0x7f050014
-			public const int app_name = 2131034132;
+			// aapt resource value: 0x7f050015
+			public const int app_name = 2131034133;
 			
 			// aapt resource value: 0x7f050012
 			public const int appbar_scrolling_view_behavior = 2131034130;
 			
+			// aapt resource value: 0x7f050014
+			public const int hello = 2131034132;
+			
 			// aapt resource value: 0x7f050013
-			public const int hello = 2131034131;
+			public const int library_name = 2131034131;
 			
 			// aapt resource value: 0x7f050011
 			public const int status_bar_notification_info_overflow = 2131034129;
@@ -3212,6 +3288,9 @@ namespace xamarinhydrate
 			// aapt resource value: 0x7f070133
 			public const int Widget_Design_TextInputLayout = 2131165491;
 			
+			// aapt resource value: 0x7f070134
+			public const int chart_style = 2131165492;
+			
 			static Style()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -3558,6 +3637,24 @@ namespace xamarinhydrate
 			
 			// aapt resource value: 4
 			public const int DrawerArrowToggle_topBottomBarArrowSize = 4;
+			
+			public static int[] FitChart = new int[] {
+					2130772220,
+					2130772221,
+					2130772222,
+					2130772223};
+			
+			// aapt resource value: 3
+			public const int FitChart_animationMode = 3;
+			
+			// aapt resource value: 2
+			public const int FitChart_backStrokeColor = 2;
+			
+			// aapt resource value: 0
+			public const int FitChart_strokeSize = 0;
+			
+			// aapt resource value: 1
+			public const int FitChart_valueStrokeColor = 1;
 			
 			public static int[] FloatingActionButton = new int[] {
 					16842964,
