@@ -15,7 +15,7 @@ using com.frankcalise.widgets;
 namespace xamarinhydrate
 {
     [Activity(
-        Label = "xamarin-hydrate",
+        Label = "Hydrate",
         MainLauncher = true,
         Icon = "@drawable/icon",
         Theme = "@style/Theme.AppCompat.Light.DarkActionBar")]
