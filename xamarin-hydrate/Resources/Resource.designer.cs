@@ -99,6 +99,22 @@ namespace xamarinhydrate
 			}
 		}
 		
+		public partial class Array
+		{
+			
+			// aapt resource value: 0x7f0c0000
+			public const int data_view_array = 2131492864;
+			
+			static Array()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Array()
+			{
+			}
+		}
+		
 		public partial class Attribute
 		{
 			
@@ -1461,6 +1477,9 @@ namespace xamarinhydrate
 			// aapt resource value: 0x7f06005d
 			public const int snackbar_text_size = 2131099741;
 			
+			// aapt resource value: 0x7f060062
+			public const int sticky_height = 2131099746;
+			
 			// aapt resource value: 0x7f060061
 			public const int stroke_size = 2131099745;
 			
@@ -1708,6 +1727,9 @@ namespace xamarinhydrate
 			
 			// aapt resource value: 0x7f0b006d
 			public const int ListHeaderItem = 2131427437;
+			
+			// aapt resource value: 0x7f0b0073
+			public const int StickyDataViewSpinner = 2131427443;
 			
 			// aapt resource value: 0x7f0b0075
 			public const int action0 = 2131427445;
@@ -2026,9 +2048,6 @@ namespace xamarinhydrate
 			
 			// aapt resource value: 0x7f0b0077
 			public const int status_bar_latest_event_content = 2131427447;
-			
-			// aapt resource value: 0x7f0b0073
-			public const int stickyView = 2131427443;
 			
 			// aapt resource value: 0x7f0b006f
 			public const int stickyViewPlaceholder = 2131427439;

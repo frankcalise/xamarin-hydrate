@@ -22,7 +22,16 @@
             android:layout_height="wrap_content"
             android:scrollbars="none"
             android:divider="@color/cell_divider" />
-        <TextView
+        <Spinner
+            android:id="@+id/StickyDataViewSpinner"
+            android:background="#222"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sticky_height"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:entries="@array/data_view_array" />
+    <!--<TextView
             android:id="@+id/stickyView"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -32,7 +41,7 @@
             android:text="Heading1"
             android:textColor="#fff"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold" />-->
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/ActionButton"
             android:layout_width="wrap_content"

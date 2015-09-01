@@ -15,7 +15,7 @@ using com.frankcalise.widgets;
 namespace xamarinhydrate
 {
     [Activity(
-        Label = "Hydrate",
+        Label = "@string/app_name",
         MainLauncher = true,
         Icon = "@drawable/icon",
         Theme = "@style/Theme.AppCompat.Light.DarkActionBar")]
@@ -47,7 +47,7 @@ namespace xamarinhydrate
 
             // Inflate the list sticky header layout
             var inflater = (LayoutInflater)this.GetSystemService(Context.LayoutInflaterService);
-			var stickyView = FindViewById<TextView>(Resource.Id.stickyView);
+            var stickyView = FindViewById<Spinner>(Resource.Id.StickyDataViewSpinner);
             var stickyHeaderView = inflater.Inflate(Resource.Layout.ListStickyHeader, null);
             var spacer = stickyHeaderView.FindViewById<Space>(Resource.Id.stickyViewPlaceholder);
 

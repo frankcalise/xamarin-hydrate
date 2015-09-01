@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+	<string-array name="data_view_array">
+		<item>Day View</item>
+		<item>Week View</item>
+		<item>Month View</item>
+	</string-array>
+</resources>
+	

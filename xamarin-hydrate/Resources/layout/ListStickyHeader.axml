@@ -9,5 +9,5 @@
     <Space
         android:id="@+id/stickyViewPlaceholder"
         android:layout_width="match_parent"
-        android:layout_height="50dp" />
+        android:layout_height="@dimen/sticky_height" />
 </LinearLayout>
